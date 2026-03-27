@@ -3,7 +3,7 @@ import type { SiteConfig, SiteContent } from "../types";
 export const SITE_CONFIG: SiteConfig = {
   title: "Scott Opiela — 3x CMO · B2B SaaS Operator",
   author: "Scott Opiela",
-  description: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
+  description: "PE-backed SaaS growth leader behind $3B+ in exits. I run high-performance marketing with a focus on leverage, systems, and measurable outcomes — scaling growth efficiently through data and AI.",
   lang: "en",
   siteLogo: "/scott-small.jpg",
   navLinks: [
@@ -15,16 +15,16 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "LinkedIn", href: "https://www.linkedin.com/in/scottopiela" },
     { text: "virtualimage.com", href: "https://www.virtualimage.com" },
   ],
-  socialImage: "/scott-big.jpg",
+  socialImage: "/scott-small.jpg",
   canonicalURL: "https://scottopiela.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Scott Opiela",
-    specialty: "3x CMO · B2B SaaS Operator",
-    summary: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
-    email: "https://virtualimage.com/start-growing.html",
+    specialty: "3× CMO · Driving Efficient, Scalable Growth",
+    summary: "PE-backed SaaS growth leader behind $3B+ in exits. I run high-performance marketing with a focus on leverage, systems, and measurable outcomes — scaling growth efficiently through data and AI.",
+    email: "mailto:scott@opiela.com",
   },
   experience: [
     {
