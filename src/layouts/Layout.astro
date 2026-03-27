@@ -23,6 +23,14 @@ const ogImgUrl = canonicalURL + socialImage;
 <!doctype html>
 <html lang={lang} class="scroll-pt-16 scroll-smooth">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9XK1QW02E"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V9XK1QW02E');
+    </script>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
