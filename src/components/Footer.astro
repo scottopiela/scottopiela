@@ -7,12 +7,18 @@ const { author, socialLinks } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="w-full border-t border-neutral/20 px-5 pt-5 pb-8 text-center text-white">
+<footer
+  class="w-full border-t border-neutral/20 px-5 pt-5 pb-8 text-center text-white"
+>
   <ul class="mb-5 flex flex-wrap justify-center gap-x-5 text-xs">
     {
       socialLinks.map(({ text, href }) => (
         <li>
-          <a href={href} target="_blank" class="inline-block px-4 py-3 after:relative after:bottom-[-4px] after:content-[url(/external.svg)] hover:text-primary">
+          <a
+            href={href}
+            target="_blank"
+            class="inline-block px-4 py-3 after:relative after:bottom-[-4px] after:content-[url(/external.svg)] hover:text-primary"
+          >
             {text}
           </a>
         </li>
@@ -20,7 +26,15 @@ const currentYear = new Date().getFullYear();
     }
   </ul>
   <p class="text-xs">
-    {author} © {currentYear}. <span class="text-neutral">Designed &amp; Developed by</span>
-    <a href="https://www.virtualimage.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary">virtualimage</a>
+    {author} &copy; {currentYear}.{" "}
+    <span class="text-neutral">Designed &amp; Developed by</span>{" "}
+    <a
+      href="https://www.virtualimage.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-primary"
+    >
+      virtualimage
+    </a>
   </p>
 </footer>
