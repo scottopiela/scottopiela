@@ -93,7 +93,7 @@ export const SITE_CONTENT = {
   ],
   about: {
     description:
-      "Hi, I'm Scott Opiela — a 3× Chief Marketing Officer with 30 years engineering demand systems for high-growth B2B SaaS companies. Most CMOs manage marketing. I build the engine.\n\nAcross Acoustic, CommerceHub, and Autotask, I've led marketing organizations responsible for 10× ARR growth, $3B+ in shareholder exits, and demand programs that consistently outperform benchmarks at scale.\n\nIf you're a B2B SaaS company looking to build — not just manage — let's talk.",
+      "Hi, I'm Scott Opiela — a 3× Chief Marketing Officer with 30 years engineering demand systems for high-growth B2B SaaS companies. Most CMOs manage marketing. I build the engine. Across Acoustic, CommerceHub, and Autotask, I've led marketing organizations responsible for 10× ARR growth, $3B+ in shareholder exits, and demand programs that consistently outperform benchmarks at scale. If you're a B2B SaaS company looking to build — not just manage — let's talk.",
     image: scottBig,
   },
 };
