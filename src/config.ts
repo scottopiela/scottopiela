@@ -5,7 +5,7 @@ import commercehubLogo from "./assets/commercehub-logo.png";
 import autotaskLogo from "./assets/autotask-logo.png";
 
 export const SITE_CONFIG = {
-  title: "Scott Opiela — 3× CMO · B2B SaaS Operator",
+  title: "Scott Opiela — 3x CMO · B2B SaaS Operator",
   description: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
   lang: "en",
   author: "Scott Opiela",
@@ -25,37 +25,7 @@ export const SITE_CONFIG = {
 export const SITE_CONTENT = {
   hero: {
     name: "Scott Opiela",
-    specialty: "3× CMO · B2B SaaS Operator",
-    summary: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in
-cat > ~/Documents/scottopiela/src/config.ts << 'EOF'
-import scottSmall from "./assets/scott-small.jpg";
-import scottBig from "./assets/scott-big.jpg";
-import acousticLogo from "./assets/acoustic-logo.png";
-import commercehubLogo from "./assets/commercehub-logo.png";
-import autotaskLogo from "./assets/autotask-logo.png";
-
-export const SITE_CONFIG = {
-  title: "Scott Opiela — 3× CMO · B2B SaaS Operator",
-  description: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
-  lang: "en",
-  author: "Scott Opiela",
-  siteLogo: scottSmall,
-  socialImage: "scott-big.jpg",
-  navLinks: [
-    { text: "Experience", href: "#experience" },
-    { text: "Companies", href: "#projects" },
-    { text: "About", href: "#about" },
-  ],
-  socialLinks: [
-    { text: "LinkedIn", href: "https://www.linkedin.com/in/scottopiela" },
-    { text: "virtualimage.com", href: "https://www.virtualimage.com" },
-  ],
-};
-
-export const SITE_CONTENT = {
-  hero: {
-    name: "Scott Opiela",
-    specialty: "3× CMO · B2B SaaS Operator",
+    specialty: "3x CMO · B2B SaaS Operator",
     summary: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
     email: "https://virtualimage.com/start-growing.html",
   },
@@ -77,7 +47,7 @@ export const SITE_CONTENT = {
       startDate: "2015",
       endDate: "2019",
       summary: [
-        "Scaled marketing through CommerceHub's growth phase and NYSE IPO, building demand systems that supported 10× ARR expansion across retail and brand verticals.",
+        "Scaled marketing through CommerceHub's growth phase and NYSE IPO, building demand systems that supported 10x ARR expansion across retail and brand verticals.",
         "Engineered enterprise demand generation programs that consistently outperformed pipeline benchmarks, fueling the company's trajectory toward a $3B+ shareholder exit.",
         "Built and led a high-performance marketing team across brand, product marketing, content, and demand generation.",
       ],
