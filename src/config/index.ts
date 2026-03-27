@@ -74,7 +74,7 @@ export const SITE_CONTENT: SiteContent = {
     },
     {
       name: "CommerceHub",
-      summary: "Scaled marketing through CommerceHub growth phase and NYSE IPO, engineering demand systems that supported 10x ARR expansion and helped position the company for a $3B+ shareholder exit.",
+      summary: "At CommerceHub, led go-to-market strategy, brand, communications, and demand generation, supporting enterprise growth and market leadership ahead of its multi-billion dollar acquisition by Insight Partners (2020).",
       linkPreview: "https://www.rithum.com",
       linkSource: "https://www.rithum.com",
       image: "/commercehub-logo.png",
