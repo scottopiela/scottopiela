@@ -46,33 +46,21 @@ const schema = {
       "roleName": "Chief Marketing Officer",
       "startDate": "2021",
       "endDate": "2026",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Acoustic",
-        "url": "https://acoustic.com"
-      }
+      "worksFor": { "@type": "Organization", "name": "Acoustic", "url": "https://acoustic.com" }
     },
     {
       "@type": "Role",
       "roleName": "Chief Marketing Officer",
       "startDate": "2018",
       "endDate": "2021",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "CommerceHub",
-        "url": "https://commercehub.com"
-      }
+      "worksFor": { "@type": "Organization", "name": "CommerceHub", "url": "https://commercehub.com" }
     },
     {
       "@type": "Role",
       "roleName": "Chief Marketing Officer",
       "startDate": "2001",
       "endDate": "2017",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Autotask",
-        "url": "https://autotask.com"
-      }
+      "worksFor": { "@type": "Organization", "name": "Autotask", "url": "https://autotask.com" }
     }
   ]
 };
@@ -116,7 +104,7 @@ const schema = {
     <meta name="twitter:image" content={ogImageURL} />
 
     <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
     <Header />
