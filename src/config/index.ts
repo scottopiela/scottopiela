@@ -16,7 +16,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "virtualimage.com", href: "https://www.virtualimage.com" },
   ],
   socialImage: "/scott-big.jpg",
-  canonicalURL: "https://scottopiela.vercel.app",
+  canonicalURL: "https://scottopiela.com",
 };
 
 export const SITE_CONTENT: SiteContent = {
