@@ -6,8 +6,7 @@ import autotaskLogo from "./assets/autotask-logo.png";
 
 export const SITE_CONFIG = {
   title: "Scott Opiela — 3× CMO · B2B SaaS Operator",
-  description:
-    "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
+  description: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
   lang: "en",
   author: "Scott Opiela",
   siteLogo: scottSmall,
@@ -27,9 +26,8 @@ export const SITE_CONTENT = {
   hero: {
     name: "Scott Opiela",
     specialty: "3× CMO · B2B SaaS Operator",
-    summary:
-      "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
-    ctaUrl: "https://virtualimage.com/start-growing.html",
+    summary: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
+    email: "https://virtualimage.com/start-growing.html",
   },
   experience: [
     {
@@ -68,32 +66,28 @@ export const SITE_CONTENT = {
   projects: [
     {
       name: "Acoustic",
-      summary:
-        "Stepped in post-IBM spinout to rebuild Acoustic's brand, positioning, and demand engine from scratch — leading a full-funnel marketing org through product relaunch and enterprise market re-entry.",
+      summary: "Stepped in post-IBM spinout to rebuild Acoustic's brand, positioning, and demand engine from scratch — leading a full-funnel marketing org through product relaunch and enterprise market re-entry.",
       image: acousticLogo,
       linkPreview: "https://acoustic.com",
       linkSource: "https://acoustic.com",
     },
     {
       name: "CommerceHub",
-      summary:
-        "Scaled marketing through CommerceHub's growth phase and NYSE IPO, engineering demand systems that supported 10× ARR expansion and helped position the company for a $3B+ shareholder exit.",
+      summary: "Scaled marketing through CommerceHub's growth phase and NYSE IPO, engineering demand systems that supported 10× ARR expansion and helped position the company for a $3B+ shareholder exit.",
       image: commercehubLogo,
       linkPreview: "https://commercehub.com",
       linkSource: "https://commercehub.com",
     },
     {
       name: "Autotask",
-      summary:
-        "Led marketing through Autotask's hyper-growth period, scaling its IT business management SaaS to thousands of MSP customers globally and establishing the company as the category leader ahead of its acquisition by Datto.",
+      summary: "Led marketing through Autotask's hyper-growth period, scaling its IT business management SaaS to thousands of MSP customers globally and establishing the company as the category leader ahead of its acquisition by Datto.",
       image: autotaskLogo,
       linkPreview: "https://autotask.com",
       linkSource: "https://autotask.com",
     },
   ],
   about: {
-    description:
-      "Hi, I'm Scott Opiela — a 3× Chief Marketing Officer with 30 years engineering demand systems for high-growth B2B SaaS companies. Most CMOs manage marketing. I build the engine. Across Acoustic, CommerceHub, and Autotask, I've led marketing organizations responsible for 10× ARR growth, $3B+ in shareholder exits, and demand programs that consistently outperform benchmarks at scale. If you're a B2B SaaS company looking to build — not just manage — let's talk.",
+    description: "Hi, I'm Scott Opiela — a 3× Chief Marketing Officer with 30 years engineering demand systems for high-growth B2B SaaS companies. Most CMOs manage marketing. I build the engine. Across Acoustic, CommerceHub, and Autotask, I've led marketing organizations responsible for 10× ARR growth, $3B+ in shareholder exits, and demand programs that consistently outperform benchmarks at scale. If you're a B2B SaaS company looking to build — not just manage — let's talk.",
     image: scottBig,
   },
 };
