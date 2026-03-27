@@ -1,114 +1,52 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "@components/Header.astro";
+import "@fontsource/be-vietnam-pro";
+import "@fontsource-variable/gabarito";
 import { SITE_CONFIG } from "@config";
-import "../styles/global.css";
-
-interface Props {
-  title?: string;
-  description?: string;
-}
+import Footer from "@components/Footer.astro";
 
 const {
-  title = SITE_CONFIG.title,
-  description = SITE_CONFIG.description,
-} = Astro.props;
+  title,
+  description,
+  siteLogo,
+  navLinks,
+  lang,
+  author,
+  socialLinks,
+  socialImage,
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+} = SITE_CONFIG;
 
-const canonicalURL = SITE_CONFIG.canonicalURL;
-const ogImageURL = `${canonicalURL}${SITE_CONFIG.socialImage}`;
-
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Scott Opiela",
-  "url": canonicalURL,
-  "email": "scott@opiela.com",
-  "jobTitle": "Chief Marketing Officer",
-  "description": description,
-  "image": ogImageURL,
-  "sameAs": [
-    "https://www.linkedin.com/in/scottopiela",
-    "https://www.virtualimage.com"
-  ],
-  "knowsAbout": [
-    "B2B SaaS Marketing",
-    "Demand Generation",
-    "Revenue Operations",
-    "PE-backed Growth Marketing",
-    "Enterprise Marketing Strategy",
-    "Go-to-Market Strategy",
-    "Brand Transformation",
-    "AI-driven Marketing"
-  ],
-  "hasOccupation": [
-    {
-      "@type": "Role",
-      "roleName": "Chief Marketing Officer",
-      "startDate": "2021",
-      "endDate": "2026",
-      "worksFor": { "@type": "Organization", "name": "Acoustic", "url": "https://acoustic.com" }
-    },
-    {
-      "@type": "Role",
-      "roleName": "Chief Marketing Officer",
-      "startDate": "2018",
-      "endDate": "2021",
-      "worksFor": { "@type": "Organization", "name": "CommerceHub", "url": "https://commercehub.com" }
-    },
-    {
-      "@type": "Role",
-      "roleName": "Chief Marketing Officer",
-      "startDate": "2001",
-      "endDate": "2017",
-      "worksFor": { "@type": "Organization", "name": "Autotask", "url": "https://autotask.com" }
-    }
-  ]
-};
+const ogImgUrl = canonicalURL + socialImage;
 ---
 
 <!doctype html>
-<html lang={SITE_CONFIG.lang}>
+<html lang={lang} class="scroll-pt-16 scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
-    <meta name="theme-color" content="#0f172a" />
-
-    <!-- SEO Core -->
-    <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="author" content={SITE_CONFIG.author} />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href={canonicalURL} />
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta name="author" content={author} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={SITE_CONFIG.author} />
-    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImageURL} />
-    <meta property="og:image:alt" content={`${SITE_CONFIG.author} — CMO & B2B SaaS Growth Leader`} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImgUrl} />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImageURL} />
-
-    <!-- JSON-LD Structured Data -->
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImgUrl} />
   </head>
-  <body>
-    <Header siteLogo={SITE_CONFIG.siteLogo} navLinks={SITE_CONFIG.navLinks} />
-    <slot />
-    <Footer author={SITE_CONFIG.author} socialLinks={SITE_CONFIG.socialLinks} />
+  <body class="bg-black font-sans">
+    <Header siteLogo={siteLogo} navLinks={navLinks} />
+    <main class="mx-auto max-w-3xl px-5">
+      <slot />
+    </main>
+    <Footer author={author} socialLinks={socialLinks} />
   </body>
 </html>
