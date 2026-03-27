@@ -107,8 +107,8 @@ const schema = {
     <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
-    <Header />
+    <Header siteLogo={SITE_CONFIG.siteLogo} navLinks={SITE_CONFIG.navLinks} />
     <slot />
-    <Footer />
+    <Footer author={SITE_CONFIG.author} socialLinks={SITE_CONFIG.socialLinks} />
   </body>
 </html>
