@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import { SITE_CONFIG } from "@config";
 import "../styles/global.css";
 
@@ -117,6 +119,8 @@ const schema = {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
