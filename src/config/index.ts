@@ -1,98 +1,90 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
-  description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+  title: "Scott Opiela — 3x CMO · B2B SaaS Operator",
+  author: "Scott Opiela",
+  description: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/scott-small.jpg",
   navLinks: [
     { text: "Experience", href: "#experience" },
-    { text: "Projects", href: "#projects" },
+    { text: "Companies", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/scottopiela" },
+    { text: "virtualimage.com", href: "https://www.virtualimage.com" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/scott-big.jpg",
+  canonicalURL: "https://scottopiela.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
-    summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+    name: "Scott Opiela",
+    specialty: "3x CMO · B2B SaaS Operator",
+    summary: "B2B SaaS marketing executive based in the United States. I engineer demand systems that compound — specializing in enterprise demand generation, revenue operations, and $3B+ exits.",
+    email: "https://virtualimage.com/start-growing.html",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Acoustic",
+      position: "Chief Marketing Officer",
+      startDate: "2019",
+      endDate: "2022",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Repositioned Acoustic post-IBM spinout, establishing brand identity and go-to-market for a standalone enterprise marketing cloud serving Fortune 500 customers.",
+        "Rebuilt demand generation infrastructure from the ground up, engineering pipeline programs that drove measurable ARR growth in a highly competitive MarTech landscape.",
+        "Led full-funnel marketing org — brand, content, and digital demand gen — aligning closely with sales leadership to accelerate revenue and retention.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "CommerceHub",
+      position: "Chief Marketing Officer",
+      startDate: "2015",
+      endDate: "2019",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Scaled marketing through CommerceHub growth phase and NYSE IPO, building demand systems that supported 10x ARR expansion across retail and brand verticals.",
+        "Engineered enterprise demand generation programs that consistently outperformed pipeline benchmarks, fueling the company trajectory toward a $3B+ shareholder exit.",
+        "Built and led a high-performance marketing team across brand, product marketing, content, and demand generation.",
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      company: "Autotask",
+      position: "Chief Marketing Officer",
+      startDate: "2010",
+      endDate: "2015",
+      summary: [
+        "Led marketing through Autotask hyper-growth period as the company scaled its IT business management SaaS platform to thousands of MSP customers globally.",
+        "Designed and executed demand programs that compounded quarter over quarter, establishing Autotask as the category leader ahead of its acquisition by Datto.",
+      ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Acoustic",
+      summary: "Stepped in post-IBM spinout to rebuild Acoustic brand, positioning, and demand engine from scratch — leading a full-funnel marketing org through product relaunch and enterprise market re-entry.",
+      linkPreview: "https://acoustic.com",
+      linkSource: "https://acoustic.com",
+      image: "/acoustic-logo.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "CommerceHub",
+      summary: "Scaled marketing through CommerceHub growth phase and NYSE IPO, engineering demand systems that supported 10x ARR expansion and helped position the company for a $3B+ shareholder exit.",
+      linkPreview: "https://commercehub.com",
+      linkSource: "https://commercehub.com",
+      image: "/commercehub-logo.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "Autotask",
+      summary: "Led marketing through Autotask hyper-growth period, scaling its IT business management SaaS to thousands of MSP customers globally and establishing the company as the category leader ahead of its acquisition by Datto.",
+      linkPreview: "https://autotask.com",
+      linkSource: "https://autotask.com",
+      image: "/autotask-logo.png",
     },
   ],
   about: {
-    description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
-
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
-    `,
-    image: "/alejandro-big.jpg",
+    description: "Hi, I am Scott Opiela — a 3x Chief Marketing Officer with 30 years engineering demand systems for high-growth B2B SaaS companies. Most CMOs manage marketing. I build the engine. Across Acoustic, CommerceHub, and Autotask, I have led marketing organizations responsible for 10x ARR growth, $3B+ in shareholder exits, and demand programs that consistently outperform benchmarks at scale. If you are a B2B SaaS company looking to build — not just manage — lets talk.",
+    image: "/scott-big.jpg",
   },
 };
-
-// #5755ff
