@@ -56,7 +56,53 @@ const ogImgUrl = canonicalURL + socialImage;
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content={author} />
-    <script is:inline type="application/ld+json">{`{"@context":"https://schema.org","@type":"Person","name":"Scott Opiela","url":"https://scottopiela.vercel.app","email":"scott@opiela.com","jobTitle":"Chief Marketing Officer","description":"PE-backed SaaS growth leader behind $3B+ in exits.","image":"https://scottopiela.vercel.app/scott-big.jpg","sameAs":["https://www.linkedin.com/in/scottopiela","https://www.virtualimage.com"],"knowsAbout":["B2B SaaS Marketing","Demand Generation","Revenue Operations","PE-backed Growth Marketing","Go-to-Market Strategy","Brand Transformation"]}`}</script>
+    <script is:inline type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Scott Opiela",
+      "url": "https://scottopiela.com",
+      "email": "scott@opiela.com",
+      "jobTitle": "Chief Marketing Officer",
+      "description": "PE-backed SaaS growth leader behind $3B+ in exits. 3x CMO specializing in demand generation, revenue operations, and high-performance B2B marketing.",
+      "image": "https://scottopiela.com/scott-big.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/scottopiela",
+        "https://www.virtualimage.com"
+      ],
+      "knowsAbout": [
+        "B2B SaaS Marketing",
+        "Demand Generation",
+        "Revenue Operations",
+        "PE-backed Growth Marketing",
+        "Go-to-Market Strategy",
+        "Brand Transformation"
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Role",
+          "roleName": "Chief Marketing Officer",
+          "startDate": "2021",
+          "endDate": "2026",
+          "worksFor": { "@type": "Organization", "name": "Acoustic", "url": "https://acoustic.com" }
+        },
+        {
+          "@type": "Role",
+          "roleName": "Chief Marketing Officer",
+          "startDate": "2018",
+          "endDate": "2021",
+          "worksFor": { "@type": "Organization", "name": "CommerceHub", "url": "https://www.rithum.com" }
+        },
+        {
+          "@type": "Role",
+          "roleName": "Chief Marketing Officer",
+          "startDate": "2001",
+          "endDate": "2017",
+          "worksFor": { "@type": "Organization", "name": "Autotask", "url": "https://www.kaseya.com" }
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-black font-sans">
     <Header siteLogo={siteLogo} navLinks={navLinks} />
