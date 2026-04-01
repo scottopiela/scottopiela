@@ -23,7 +23,7 @@ export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Scott Opiela",
     specialty: "3\u00d7 CMO \u00b7 Driving Efficient, Scalable Growth",
-    summary: "PE-backed SaaS growth leader behind $3B+ in exits. I run high-performance marketing with a focus on leverage, systems, and measurable outcomes \u2014 scaling growth efficiently through data and AI.",
+    summary: "PE-backed SaaS growth leader behind $3B+ in exits across MarTech, Retail/eCommerce, and IT/MSP. I run high-performance marketing with a focus on leverage, systems, and measurable outcomes \u2014 scaling growth efficiently through data and AI.",
     email: "mailto:scott@opiela.com",
   },
   experience: [
