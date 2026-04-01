@@ -3,7 +3,7 @@ import type { SiteConfig, SiteContent } from "../types";
 export const SITE_CONFIG: SiteConfig = {
   title: "Scott Opiela — 3x CMO · B2B SaaS Operator",
   author: "Scott Opiela",
-  description: "PE-backed SaaS growth leader behind $3B+ in exits. I run high-performance marketing with a focus on leverage, systems, and measurable outcomes — scaling growth efficiently through data and AI.",
+  description: "PE-backed SaaS growth leader behind $3B+ in exits across MarTech, Retail/eCommerce, and IT/MSP. I run high-performance marketing with a focus on leverage, systems, and measurable outcomes — scaling growth efficiently through data and AI.",
   lang: "en",
   siteLogo: "/scott-small.jpg",
   navLinks: [
